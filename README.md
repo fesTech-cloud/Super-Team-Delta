@@ -1,2 +1,1 @@
-# Supper-Team-Delta 
-# Solana
+# Supper-Team-Delta
