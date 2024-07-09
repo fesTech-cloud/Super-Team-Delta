@@ -14,15 +14,27 @@
   border-bottom: 1px solid #840495;
 }
 
+.coinSetup {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+}
+
 .textContainer {
-  display: inline-block;
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
 }
 
 .text {
   font-size: 2em;
-  letter-spacing: 10px;
   border-right: 5px solid;
   width: 100%;
+  margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
   animation: typing 2.5s alternate-reverse infinite,
@@ -42,4 +54,39 @@
   to {
     width: 100%;
   }
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 20px;
+  column-gap: 40px;
+}
+
+.descriptionBox {
+  background-color: #3b393b;
+  border: 1px solid #6a696a;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+
+.required {
+  color: red;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 8px 30px;
+  background-color: #3b393b;
+  color: #fff;
+  border-style: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0e92c2;
 }
