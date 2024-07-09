@@ -1,0 +1,45 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 20px 0;
+  border-bottom: 1px solid #840495;
+}
+
+.textContainer {
+  display: inline-block;
+}
+
+.text {
+  font-size: 2em;
+  letter-spacing: 10px;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.5s alternate-reverse infinite,
+    cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: #840495;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

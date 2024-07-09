@@ -4,24 +4,29 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <Navigation />
-    </main>
+    <>
+      <main className={styles.main}>
+        <Navigation />
+      </main>
+      <Body />
+    </>
   );
 }
 
 function Navigation() {
   return (
-    <nav>
-      <div>Token Wizard</div>
-      <ul>
-        <li>Home</li>
-        <li>Dashboard</li>
-        <li>Deployer</li>
-      </ul>
-      <WalletMultiButton />
-      <Body />
-    </nav>
+    <>
+      <nav className={styles.nav}>
+        <p>Token Wizard</p>
+        <ul>
+          <li>Home</li>
+          <li>Dashboard</li>
+          <li>Deployer</li>
+        </ul>
+        <WalletMultiButton />
+      </nav>
+      <hr />
+    </>
   );
 }
 
@@ -29,7 +34,9 @@ function Body() {
   return (
     <div>
       <p>Deploy Your Own Token Using</p>
-      <p>Token Wizard</p>
+      <div className={styles.textContainer}>
+        <p className={styles.text}>Token Wizard</p>
+      </div>
       <div>Steps</div>
       <Form />
     </div>
