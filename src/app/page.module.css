@@ -1,0 +1,77 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 20px 0;
+  border-bottom: 1px solid #840495;
+}
+
+.stepsHeading {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.textContainer {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.text {
+  font-size: 2em;
+  border-right: 5px solid;
+  width: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.5s alternate-reverse infinite,
+    cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: #840495;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  row-gap: 20px;
+  column-gap: 40px;
+}
+
+.descriptionBox {
+  background-color: #3b393b;
+  border: 1px solid #6a696a;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+
+.required {
+  color: red;
+}
